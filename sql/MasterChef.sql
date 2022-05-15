@@ -1,0 +1,1 @@
+select e.emp_name from cooking as c left join employee as e on e.emp_id = c.emp_id left join recipe as r on c.f_id = r.f_id group by(e.emp_name) order by count(e.emp_name) desc limit 3
